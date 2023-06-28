@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+      shrink-to-fit="no"
+    />
+    <title>Depth_Live Music</title>
+    <link rel="stylesheet" type="text/css" href="cssreset.css" />
+    <link rel="stylesheet" href="depth_rwd.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".tdwidth").change(function () {
+          var val = $(".tdwidth").val();
+          console.log(val);
+          // if(val != 0){
+          // $('.book_band').eq(val - 1).addClass('booking_select');
+          // }else{
+          // 	$('.book_band').css('box-shadow','none');
+          // }
+          if (val != 0) {
+            $(".book_band")
+              .eq(val - 1)
+              .css("box-shadow", "0px 0px 10px 10px #fff")
+              .siblings()
+              .css("box-shadow", "100px 100px 100px 100px #444 inset");
+          } else {
+            $(".book_band").css("box-shadow", "none");
+          }
+        });
+      });
+    </script>
+    <style type="text/css">
+      * {
+        /*outline: 1px solid red;*/
+      }
+      .Book .nav_menu_music {
+        color: #e8bc35;
+      }
+    </style>
+  </head>
+  <body class="Book">
+    <!------------navbar------------->
+    <input type="checkbox" name="" id="menu-control" />
+    <label class="hb" for="menu-control"></label>
+    <div class="mb_nav">
+      <a href="index.html">
+        <img class="logo_mb" src="logo.png" />
+      </a>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <div class="logo">
+          <a href="index.html" alt="Depth_logo">
+            <img src="logo.png" />
+          </a>
+        </div>
+        <li><a class="nav_menu_drink" href="drink_rwd.html">DRINK</a></li>
+        <li><a class="nav_menu_food" href="food_rwd.html">FOOD</a></li>
+        <li>
+          <a class="nav_menu_music" href="livemusic_RWD.html">LIVE&nbspMUSIC</a>
+        </li>
+        <li><a class="nav_menu_about" href="about_RWD.html">ABOUT</a></li>
+        <li><p class="open">17:00 ~ 02:00 Monday Closed</p></li>
+      </ul>
+    </nav>
+    <div class="Book_bg">
+      <div class="Book_box box">
+        <!------------form------------->
+        <div class="form_bgcolor">
+          <form>
+            <table>
+              <tr>
+                <td>
+                  <select class="tdwidth">
+                    <option value="">Please Select Band</option>
+                    <option value="1">ONE OK ROCK_(10/6)</option>
+                    <option value="2">LINKIN PARK_(10/13)</option>
+                    <option value="3">ALTER BRIDGE_(10/20)</option>
+                    <option value="4">THREE DAYS GRACE_(10/27)</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="nemeid"
+                    maxlength="5"
+                    class="tdwidth"
+                    placeholder="Name"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="phone"
+                    class="tdwidth"
+                    placeholder="Phone"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="tel_1"
+                    maxlength="10"
+                    class="tdwidth"
+                    placeholder="Tell"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="email"
+                    name="mail"
+                    class="tdwidth"
+                    placeholder="Email"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <textarea name="memo" placeholder="Opinion"></textarea>
+                </td>
+              </tr>
+            </table>
+            <div class="form_button">
+              <input type="submit" value="Confirm" />
+            </div>
+          </form>
+        </div>
+        <!------------band1------------->
+        <div class="book_band book_band1">
+          <div class="book_img_box book_box1_img">
+            <img src="oor_500x270.png" alt="" />
+          </div>
+          <div class="book_box_word book_box_word1">
+            <h4>ONE OK ROCK</h4>
+            <p>
+              A Japanese rock band, formed in Tokyo, Japan in They settled into
+              the western sound they loved an
+            </p>
+          </div>
+        </div>
+        <!------------band2------------->
+        <div class="book_band book_band2">
+          <div class="book_img_box book_2_img">
+            <img src="linpark_500x270.png" alt="" />
+          </div>
+          <div class="book_box_word book_box_word2">
+            <h4>LINKIN PARK</h4>
+            <p>
+              Linkin Park is an American rock band from Agoura Hills,
+              California. Formed in 1996, the band fame with.
+            </p>
+          </div>
+        </div>
+        <!------------band3------------->
+        <div class="book_band book_band3">
+          <div class="book_img_box book_3_img">
+            <img src="One Direction_500x270.png" alt="" />
+          </div>
+          <div class="book_box_word book_box_word3">
+            <h4>ALTER BRIDGE</h4>
+            <p>
+              Alter Bridge signed a record deal with Universal Republic Records.
+              Tremonti said of the band's new material.
+            </p>
+          </div>
+        </div>
+        <!------------band4------------->
+        <div class="book_band book_band4">
+          <div class="book_img_box book_4_img">
+            <img src="The Boxer Rebellion_500x270.png" alt="" />
+          </div>
+          <div class="book_box_word book_box_word4">
+            <h4>THREE DAYS GRACE</h4>
+            <p>
+              Three Days Grace is a Canadian rock band formed in Norwood,
+              Ontario in 1997. Based in Toronto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Tel:78-978-7878 Address:580 Cherry St, Macon,GA</p>
+      <p>Copyright©2018 Depth All right reserved</p>
+    </div>
+  </body>
+</html>

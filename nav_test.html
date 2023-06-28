@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" shrink-to-fit=no>
+	<title>Document</title>
+	<style>
+	body{
+		background-color: #000;
+	}
+		*{
+			padding: 0;
+			margin: 0;
+			outline: 1px solid red;
+		}
+		.logo{
+			height: 40px;
+		}
+		.logo_mb{
+			display: none;
+			font-size: 0;
+		}
+		.logo img{
+			vertical-align: middle;
+			/*height: 100%;*/
+			/*width: 100%;*/
+		}
+		.navbar{
+			width: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 100;
+		    background:-webkit-linear-gradient(135deg,rgba(50,50,50,0.7),rgba(10, 10, 10, 0.5));
+		}
+		a{
+			/*display: inline-block;*/
+			font-size:20px;
+			color: #ddd;
+			letter-spacing: 1.5px;
+			text-decoration: none;
+			padding: 10px 50px;
+			line-height: 50px;
+			color: #fff;
+			text-shadow: 1px 1px 20px #f3d991;
+		}
+		ul a:hover{
+			color: #e8bc35;	
+		}
+
+		ul{
+			/*position: relative;*/
+			font-size: 0;
+			display: flex;
+			justify-content: space-around;
+		}
+		li{
+			font-size: 0;
+		}
+		li p{
+			color: #fff;
+			font-size:12px;
+			line-height: 24px;
+			width: 100px;
+		}
+		.ccc{
+			width: 500px;
+		}
+		.hb{ display: none; }
+		#menu-control{
+			position: absolute;
+			width: 0;
+			height: 0;
+			opacity: 0;
+			z-index: -1;
+		}
+		#menu-control:checked ~ .navbar{
+			left: 0;
+		}
+		#menu-control:checked ~ .hb{
+			background-color: #00f;
+		}
+		.banner{
+			width: 100%;
+		    height: 70vh;
+		    background-size: cover;
+		    background-position: center center;
+		    position: relative;
+		}
+		.banner{
+			background-image: url(drink_bg01_2080_1351.jpg);
+		}
+
+@media screen and (max-width:767px){	
+	.hb{
+		display: block;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		width: 30px;
+		height: 30px;
+		z-index: 10;
+		background-color: #f00;
+	}
+	.hb:before{
+		content: '';
+		width: 86%;
+		height: 2px;
+		background-color: #000;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		position: absolute;
+		margin: auto;
+		box-shadow: 0px 6px 0px #00f,
+					0px -6px 0px #00f;
+	}
+	.navbar{
+		width: 90%;
+		left: -90%;
+		top: 50px;
+		background-color: #ccc;
+		height: calc( 100vh - 50px);
+		transition: .5s;
+	}
+	.logo{
+		display: none;
+	}
+	.logo_mb{
+		display: block;
+		margin:auto;
+		/*background-color: #fff;*/
+	}
+	.open{
+		display: none;
+	}
+	ul{
+		flex-direction: column;
+	}
+}
+	</style>
+</head>
+<body>
+		<input type="checkbox" name="" id="menu-control">
+		<label class="hb" for="menu-control"></label>
+		<img class="logo_mb"src="logo.png">
+		<nav class="navbar">
+			<ul>
+				<div class="logo">
+					<a href="index_RWD.html" alt="Depth_logo">
+					<img src="logo.png">
+					</a>
+				</div>
+				<li><a href="">Drink</a> </li>
+				<li><a href="">Food</a> </li>
+				<li><a href="">Music</a> </li>
+				<li><a href="">About</a> </li>
+				<li><p class="open">17:00 ~ 02:00 Monday Closed</p></li>
+			</ul>
+		</nav>
+		<div class="drink_banner banner">
+			<div class="slogan_line">
+				<div class="slogan DRINK_slogan">
+					<!-- <h1>DRINK</h1> -->
+				</div>
+			</div>
+		</div>
+		<p class="ccc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet maxime nam hic, ad fugiat enim itaque, natus debitis quisquam, modi vero architecto cupiditate deserunt minus, dolore sed rerum nostrum optio voluptatem veniam ea? Maxime commodi, ea eaque explicabo, cupiditate qui illo dicta necessitatibus vel illum debitis iste accusamus distinctio eveniet! Qui nulla, nemo ratione sequi iure at, assumenda animi temporibus laudantium delectus maxime sit numquam doloremque vel voluptatibus, velit illo. Odit maiores, libero animi consequatur totam in ratione officiis, quasi dolorem qui debitis aut, incidunt. Illo autem vero praesentium tenetur, quaerat magnam nulla temporibus veniam pariatur dolores ea enim, similique nam quo neque quod! Cumque architecto accusantium distinctio numquam enim porro excepturi necessitatibus, harum repellendus aliquam veniam odio aspernatur dignissimos nostrum consequatur unde rem ex minima sed beatae maiores autem natus vitae iure? Laborum similique, tempora reiciendis ullam quis reprehenderit, rem nulla error? Doloremque consequuntur earum tempore id. Veniam odio eius recusandae optio eaque doloremque modi doloribus placeat, ullam non amet reprehenderit quisquam harum esse, mollitia eligendi fugit provident a inventore sunt, molestiae molestias aperiam commodi. Reprehenderit tempore nulla aliquam quod corporis explicabo, debitis, animi ut repellendus sint. Eos qui enim quo a, quidem dolor in labore quod soluta, doloremque eaque delectus sint iusto maxime? Aliquam quam nisi sit atque cum officiis. Harum, possimus dignissimos at. Aliquam reiciendis nisi perferendis totam dicta explicabo quae, expedita facilis eaque aliquid rerum reprehenderit enim voluptatibus incidunt consectetur odio. Omnis repellat optio repudiandae hic eaque consequatur dolor facilis eveniet tempore earum at autem, delectus. Provident, nobis, libero. Vero eos, odit voluptatum ducimus dolore, obcaecati tenetur distinctio quas unde non suscipit recusandae nisi at ad ipsum sit dolorem nobis delectus, in iure. Doloremque repellat at dolor fugit voluptates, provident illo, nihil a eligendi aliquam cupiditate, ipsum expedita veritatis voluptatem dolore eum! Eius earum quia, esse ullam non veniam. Tenetur architecto quidem expedita dolorem mollitia sit aperiam libero, aliquid sint assumenda neque, autem inventore! Modi, ea, qui hic illum ut necessitatibus! Laudantium aliquam error tempora atque nobis provident doloremque culpa magni. Sequi, doloremque, nemo! Ad omnis, natus fuga mollitia recusandae quia deserunt beatae hic blanditiis. Velit facere reprehenderit, nisi, laboriosam maiores ratione repellat voluptatem placeat inventore repudiandae ducimus sapiente libero, maxime, rerum odit! Perspiciatis suscipit sit iste dolorem voluptatibus. Libero ullam vero blanditiis similique quia est. Labore ducimus modi illum aut dicta id ea quaerat expedita error tempore, omnis aperiam, explicabo eaque dolor consequuntur voluptate dolore totam quae vel hic, assumenda numquam! Recusandae veritatis, sit voluptate accusamus similique expedita ullam inventore enim corporis eligendi fugiat eveniet ratione? Laborum velit excepturi eligendi aspernatur beatae. Praesentium corrupti consectetur illo quasi, saepe rerum doloremque! Expedita quia sequi numquam corrupti, nobis, ipsa quibusdam voluptas nemo voluptatum consectetur neque voluptatibus quo dicta natus eveniet atque deserunt ratione quae esse assumenda delectus culpa, incidunt ducimus. Repudiandae voluptate ducimus deleniti, voluptas explicabo iure. Rerum libero illum voluptatibus minus at vero ut, dicta a corrupti consequuntur distinctio obcaecati quia nisi eveniet iusto, earum quam quos in nobis, dolores aliquam sit quasi voluptatum voluptate? Dolor.</p>
+</body>
+</html>

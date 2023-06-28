@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+			<script>
+				$(document).ready(function(){
+					$('.n1').hover(function(){
+						$('.img_box').attr('src','about-bg1.jpg')
+					})
+					$('.n2').hover(function(){
+						$('.img_box').attr('src','about-bg2.jpg')
+					})
+					$('.n3').hover(function(){
+						$('.img_box').attr('src','about-bg3.jpg')
+					})
+				})
+			</script>
+			<title>Document</title>
+			<style>
+				.n1,.n2,.n3{
+					width: 100px;
+					height: 60px;
+					margin-top: 20px;
+					background-color: #008855;
+				}
+				.img_box{
+					margin-top: 50px;
+				}
+			</style>
+		</head>
+		<body>
+			<div class="n1">Name_1</div>
+			<div class="n2">Name_2</div>
+			<div class="n3">Name_3</div>
+			<div >
+				<img class="img_box" src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">
+			</div>
+		</body>
+		</html>		

@@ -1,0 +1,1751 @@
+body {
+  font-family: "Roboto Slab";
+  background-color: #000;
+  color: #ddd;
+  font-size: 20px;
+}
+.box {
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  /* overflow: hidden; */
+}
+h2 {
+  color: #e8bc35;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+h3 {
+  color: #e8bc35;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+p {
+  letter-spacing: 1px;
+}
+a {
+  text-decoration: none;
+}
+img {
+  vertical-align: bottom;
+}
+[class^="col-"] {
+  float: left;
+  box-sizing: border-box;
+}
+.Drink [class^="col-"],
+.Food [class^="col-"] {
+  padding: 0 10px 0 30px;
+}
+.DrinkMenu_box:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.Home h2 {
+  padding: 50px 0px;
+}
+.Home .bg_Home_contact h2 {
+  padding: 40px 0px 15px 0px;
+}
+.Home .home_select h3 {
+  font-size: 66px;
+  color: #eee;
+  letter-spacing: 5px;
+}
+.Home .home_select p {
+  font-family: Arial;
+}
+.About p {
+  font-family: Arial;
+}
+.Home .home_select a {
+  color: #f3d991;
+  letter-spacing: 2px;
+}
+.Home .home_select a:hover {
+  transition: 0.5s;
+  transform: translate(2px, 2px);
+  text-shadow: -2px -2px 20px #e8bc35;
+}
+.LiveMusic p {
+  font-family: Arial;
+}
+.LiveMusic a {
+  /*color:#ddd;*/
+}
+.Home .home_select img {
+  width: 100%;
+  vertical-align: bottom;
+}
+.Home .Home_Live h2 {
+  padding: 20px;
+}
+.Drink h2,
+.Food h2 {
+  padding: 20px 0px;
+}
+.LiveMusic h2 {
+  padding: 50px 0 10px 0;
+}
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: -webkit-linear-gradient(
+    135deg,
+    rgba(50, 50, 50, 0.7),
+    rgba(10, 10, 10, 0.5)
+  );
+}
+.navbar img {
+  vertical-align: top;
+}
+.navbar a {
+  height: 100%;
+  display: inline-block;
+  padding: 5px 50px;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 20px #f3d991;
+  color: #fff;
+}
+.navbar a:hover {
+  color: #e8bc35;
+}
+.navbar .logo a {
+  padding: 0px 0px;
+}
+.navbar ul {
+  width: 80%;
+  margin: auto;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar .open {
+  color: #fff;
+  font-size: 12px;
+  font-family: "Roboto Slab";
+  line-height: 20px;
+  width: 100px;
+}
+.banner {
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.Home .banner {
+  background-image: url(bg01_shaw.png);
+}
+.Drink .banner {
+  background-image: url(drink_bg.avif);
+}
+.Food .banner {
+  background-image: url(food_bg.jpeg);
+}
+.LiveMusic .banner {
+  background-image: url(live_bg.jpeg);
+}
+.About .banner {
+  background-position: center top;
+  background-image: url(about-bg.avif);
+}
+.Home .Home_slogan {
+  position: absolute;
+  width: 350px;
+  color: #fff;
+  font-size: 40px;
+  top: 35vh;
+  right: 200px;
+  z-index: 1;
+  text-shadow: 0px 0px 16px #000, 0px 0px 16px #000;
+}
+.Home .Home_slogan p {
+  margin-top: 10px;
+  line-height: 40px;
+  font-size: 30px;
+}
+.slogan_line {
+  position: absolute;
+  width: 208px;
+  height: 58px;
+  bottom: 50%;
+  right: 50%;
+  margin-right: -104px;
+  margin-bottom: -29px;
+  background: -webkit-linear-gradient(90deg, yellow, red);
+  z-index: 1;
+  opacity: 0.8;
+}
+.slogan {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  z-index: 2;
+  background-color: #000;
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 3px;
+  bottom: 50%;
+  right: 50%;
+  margin-right: -100px;
+  margin-bottom: -25px;
+  opacity: 1;
+}
+.logo {
+  height: 30px;
+}
+.logo img {
+  height: 100%;
+}
+.logo_mb {
+  display: none;
+}
+#menu-control {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  z-index: -1;
+}
+#menu-control:checked ~ .navbar {
+  left: 0;
+}
+.footer {
+  width: 100%;
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #ccc;
+  text-align: center;
+}
+.Home .Home_Whisky {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+.Home .Home_Whisky .diamond {
+  width: 220px;
+  height: 220px;
+  transform: scaleX(1.3) rotate(45deg);
+  border: 5px solid rgba(240, 124, 4, 0.8);
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: -1;
+  box-shadow: 0px 0px 15px 5px red;
+  animation: 20s linear infinite;
+}
+.Home_Whisky .whisky_word {
+  position: relative;
+  text-align: center;
+  width: 38.75%;
+  margin-right: 10%;
+  margin-left: -5%;
+  padding-top: 20px;
+  z-index: 1;
+}
+.Home_Whisky .whisky_word p {
+  margin-top: 20px;
+  line-height: 40px;
+  z-index: 1;
+}
+.Home_Whisky .whisky_word a {
+  padding: 10px 10px;
+  display: inline-block;
+  position: relative;
+}
+.Home_Whisky .whisky_img {
+  width: 22.5%;
+  opacity: 0;
+}
+.Home_beer_cock {
+  width: 100%;
+  /*height: 70vh;*/
+  height: 500px;
+  background: url(bg02_mix_1265x450.png) no-repeat;
+  background-position: center bottom;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.Home_beer_cock h2 {
+  text-align: left;
+}
+.Home_beer_cock p {
+  font-size: 20px;
+  height: 200px;
+  line-height: 40px;
+  padding-top: 30px;
+  color: #eee;
+}
+.Home_beer_cock a {
+  padding: 10px 10px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+.Home_beer_cock .beer_img,
+.Home_beer_cock .cocktail_img {
+  width: 20.833333%;
+  opacity: 0;
+}
+
+.Home_beer_cock .beer_word,
+.Home_beer_cock .cocktail_word {
+  width: 27.5%;
+  padding: 20px 20px 50px 20px;
+  box-sizing: border-box;
+  position: relative;
+  text-align: left;
+}
+.Home_Bartender {
+  height: 600px;
+}
+.Home_Bartender .bartender {
+  position: absolute;
+  opacity: 0;
+}
+.Home_Bartender .line {
+  position: relative;
+  width: 83.333333%;
+  height: 550px;
+  margin: auto;
+  box-sizing: border-box;
+  border: 6px solid #fff;
+  opacity: 0.9;
+  z-index: 1;
+  box-shadow: 1px 1px 100px 10px #f00, inset 1px 1px 100px 8px #ffc001;
+}
+.Home_Bartender .ph1 {
+  width: 35%;
+  top: -30px;
+  left: -4.166666%;
+  z-index: 1;
+  box-shadow: 0px 0px 1px 1px #aaa;
+}
+.Home_Bartender .ph2 {
+  top: 230px;
+  left: -1%;
+  width: 23%;
+  box-shadow: 0px 0px 1px 1px #aaa;
+}
+.Home_Bartender .ph3 {
+  top: 130px;
+  left: 25%;
+  width: 23%;
+  box-shadow: 0px 0px 1px 1px #aaa;
+}
+.Home_Bartender span {
+  /*bartender hover*/
+  position: absolute;
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  text-shadow: 1px 1px 15px #ff0;
+  color: #fff;
+  line-height: 30px;
+  padding: 10px 0px;
+  width: 100%;
+  height: 60px;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.Home_Bartender span p {
+  font-size: 16px;
+}
+.Home_Bartender .bartender:hover span {
+  background-color: rgba(50, 50, 50, 0.7);
+  opacity: 1;
+}
+.Home_Bartender .word {
+  width: 30%;
+  position: absolute;
+  top: 150px;
+  right: 13%;
+  font-size: 20px;
+  line-height: 2;
+  text-align: left;
+}
+.Home_Bartender a {
+  position: absolute;
+  right: 13%;
+  bottom: 100px;
+  padding: 10px 0;
+  font-size: 20px;
+}
+.bg_Home_Live {
+  width: 100%;
+  /*height: 70vh;*/
+  height: 500px;
+  margin-top: 50px;
+  position: relative;
+  background-image: url(livemusic_bg_dark.jpg);
+  /*background-image:url(bg03_1200-650.jpg);*/
+  background-size: cover;
+  background-attachment: fixed;
+}
+.Home_Live {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+.Home_Live .liveBand_img {
+  width: 37.5%;
+  display: inline-block;
+  margin-left: 0px;
+  vertical-align: top;
+  box-shadow: 1px 1px 1px 1px #000;
+}
+.Home_Live .liveBand_word {
+  width: 37.5%;
+  height: 300px;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  margin-left: 50px;
+  font-size: 20px;
+  text-align: right;
+  line-height: 2;
+  vertical-align: top;
+}
+.Home_Live .liveBand_word p {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+.Home_Live a {
+  position: absolute;
+  padding: 10px 0;
+  bottom: 0;
+  right: 0%;
+}
+.Home_contact {
+  display: flex;
+  text-align: center;
+}
+.Home_contact .Address_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  /*justify-content: center;*/
+  width: 50%;
+  height: 300px;
+  line-height: 2;
+  background: -webkit-linear-gradient(-235deg, yellow 0%, red 100%);
+  background: linear-gradient(325deg, yellow 0%, red 100%);
+}
+.Home_contact .Address_box p {
+  position: relative;
+  color: #fff;
+}
+.Home_contact .Map {
+  width: 50%;
+  height: 300px;
+}
+.Home_contact iframe {
+  width: 100%;
+}
+.Home_contact .icon {
+  width: 50%;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.Home_contact .icon img {
+  vertical-align: bottom;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+}
+.Drink .DrinkMenu_box {
+  margin-top: 20px;
+  background-image: linear-gradient(90deg, #13547a 0%, #80d0c7 100%);
+}
+.Food .FoodMenu_box {
+  margin-top: 20px;
+  background-image: linear-gradient(
+    90deg,
+    #b12a5b 0%,
+    #cf556c 60%,
+    #ff8c7f 100%
+  );
+}
+.Drink .DrinkMenu,
+.Food .FoodMenu {
+  position: relative;
+  height: 230px;
+  margin-bottom: 20px;
+}
+.Drink .DrinkMenuImg {
+  /*opacity: 0;*/
+}
+.Drink .DrinkMenuImg,
+.Food .FoodMenuImg {
+  display: inline-block;
+  opacity: 0;
+}
+.Food .FoodMenuImg {
+  position: relative;
+  left: -10px;
+  height: 230px;
+  width: 230px;
+}
+.Drink .DrinkMenuImg img {
+  width: 100%;
+  height: 100%;
+}
+.Food .FoodMenuImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.Drink .DrinkMenu .name,
+.Drink .DrinkMenu .price,
+.Food .FoodMenu .name,
+.Food .FoodMenu .price {
+  display: inline-block;
+  flex-wrap: nowrap;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px #000;
+  color: #fff;
+}
+.hover_box:hover .name,
+.hover_box:hover .price,
+.hover_box:hover .content {
+  color: #e8bc35;
+  /*outline: 1px solid #456;*/
+}
+.Drink .DrinkMenu .price,
+.Food .FoodMenu .price {
+  position: absolute;
+  right: 30px;
+  width: 60px;
+}
+.Drink .DrinkMenu .content,
+.Food .FoodMenu .content {
+  font-family: Arial;
+  /*color:#ff0;*/
+  /*text-shadow: 1px 1px 1px #999;*/
+  margin-bottom: 15px;
+}
+.Drink .dashed,
+.Food .dashed {
+  display: inline-block;
+  clear: both;
+  width: 100%;
+  margin-top: 10px;
+  border-bottom: 5px dashed #bbb;
+}
+.Drink .dashed_end,
+.Food .dashed_end {
+  border-bottom: 0px;
+}
+.col-3x {
+  display: none;
+  width: 0%;
+}
+.col-3y {
+  width: 33.333333%;
+}
+.LiveMusic table {
+  /*display: table;*/
+  position: relative;
+  font-family: Arial;
+  width: 400px;
+  height: 200px;
+  top: 50%;
+  left: 60%;
+  background-color: rgba(10, 10, 10, 0.7);
+  line-height: 35px;
+  border: 0;
+  text-align: center;
+}
+.LiveMusic table .title {
+  line-height: 30px;
+  font-size: 24px;
+  border-bottom: 0;
+}
+.LiveMusic table tr {
+  border-bottom: 2px dashed orange;
+}
+.LiveMusic .ShowIntr {
+  margin-top: 100px;
+}
+.LiveMusic .ShowIntr .introd {
+  height: 303px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.float_r {
+  float: right;
+}
+.LiveMusic .ShowIntr:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.LiveMusic .ShowIntr h3 {
+  color: #e8bc35;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.LiveMusic .ShowIntr img {
+  width: 90%;
+  height: 100%;
+}
+.LiveMusic .ShowIntr .introd_word {
+  padding: 40px;
+}
+.LiveMusic .ShowIntr p {
+  line-height: 40px;
+}
+.LiveMusic .band_box img {
+  vertical-align: bottom;
+}
+.LiveMusic .band_box {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 80%;
+  height: 200px;
+  margin-top: 50px;
+  background-color: #456;
+  opacity: 0;
+}
+.LiveMusic .band_box_line {
+  position: absolute;
+  height: 700px;
+  width: 40%;
+  top: 90px;
+  left: 16.666666%;
+  border: 6px solid #fff;
+  opacity: 0;
+  z-index: -1;
+  box-shadow: 1px 1px 100px 10px #f00, inset 1px 1px 100px 10px #f00;
+  transform: rotate(45deg);
+  /*visibility:hidden;*/
+}
+.LiveMusic .band_box1,
+.LiveMusic .band_box3 {
+  background-image: linear-gradient(90deg, #13547a 0%, #80d0c7 100%);
+  border-radius: 0 1em 1em 0;
+}
+.LiveMusic .band_box2,
+.LiveMusic .band_box4 {
+  position: relative;
+  right: -20%;
+  background: linear-gradient(325deg, yellow 0%, red 100%);
+  border-radius: 1em 0 0 1em;
+}
+.LiveMusic .band_box_img {
+  width: 52.083333%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  /*background-color: #000;*/
+}
+.LiveMusic .band_box_img img {
+  width: 100%;
+  vertical-align: bottom;
+}
+.LiveMusic .band_box2_img,
+.LiveMusic .band_box4_img {
+  right: 0;
+  z-index: 2;
+}
+.LiveMusic .band_box_word {
+  width: 47.916666%;
+  z-index: 3;
+  padding: 30px;
+  box-sizing: border-box;
+  line-height: 30px;
+}
+.LiveMusic .band_box_word1,
+.LiveMusic .band_box_word3 {
+  position: absolute;
+  right: 0;
+}
+.LiveMusic .band_box_word h4 {
+  text-align: center;
+  color: #fff;
+  letter-spacing: 3px;
+  font-size: 24px;
+  padding-bottom: 10px;
+  line-height: 40px;
+  font-weight: 900;
+}
+.LiveMusic .link_to_book {
+  text-align: right;
+}
+.LiveMusic .link_to_book a {
+  padding: 10px;
+  color: #e8bc35;
+  text-shadow: -1px -1px 2px #555;
+}
+.LiveMusic .link_to_book a:hover {
+  transition: 0.5s;
+  transform: translate(2px, 2px);
+  text-shadow: -2px -2px 5px #555;
+}
+.About .about_box {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+.About .about_box .about_box_960 {
+  text-align: center;
+  font-size: 0px;
+  width: 80%;
+  margin: auto;
+}
+.about_box_960 img {
+  width: 100%;
+}
+.About .about_box .flex_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.About .about_box .contbox {
+  width: 41.666666%;
+  font-size: 20px;
+}
+.About .about_box .contbox_img :hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+.About .about_box .contbox_overflow {
+  /*width: 41.666666%;*/
+  /*width: 41%;*/
+  /*overflow: hidden;*/
+}
+.About .about_box .w2 {
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+.About .about_box .contbox_word {
+  opacity: 0;
+}
+.About .about_box .about_box_960 p {
+  box-sizing: border-box;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+.About .about_box .hr_line {
+  width: 100%;
+  height: 3px;
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background: -webkit-linear-gradient(-235deg, yellow 0%, red 100%);
+}
+.Book {
+  width: 100%;
+  background-image: url(live_bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.Book_box {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  font-family: Arial;
+}
+.Book_box .form_bgcolor {
+  width: 15%;
+  height: 400px;
+  margin: 10px;
+  background-color: rgba(150, 150, 150, 0.6);
+}
+.Book_box table {
+  font-size: 20px;
+  text-align: center;
+}
+.Book_box td {
+  padding: 10px 10px;
+}
+.Book_box input {
+  padding-left: 6px;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+.Book_box select {
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px #99999e inset;
+  height: 24px;
+}
+.Book_box .tdwidth {
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px #99999e inset;
+  max-width: 300px;
+  width: 100%;
+  height: 24px;
+}
+.Book_box textarea {
+  padding-bottom: 30%;
+  max-width: 300px;
+  width: 100%;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px #99999e inset;
+  box-sizing: border-box;
+}
+.Book_box .form_button {
+  text-align: center;
+  padding: 20px;
+}
+.Book_box .form_button input {
+  /*width: 150px;*/
+  width: 90%;
+  height: 30px;
+  font-size: 20px;
+  color: #ddd;
+  outline: 1px solid #ccc;
+  background-color: #333;
+  border: 0;
+  border-radius: 3px;
+  font-family: Arial;
+  font-weight: bold;
+  cursor: pointer;
+}
+.Book_box .form_button input:hover {
+  color: #e8bc35;
+  outline: 1px solid #e8bc35;
+  position: relative;
+
+  top: 1px;
+  left: 1px;
+}
+.book_band {
+  width: 20%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  border-radius: 1em;
+  background-image: linear-gradient(180deg, #13547a 0%, #80d0c7 100%);
+}
+/*.book_band1{
+	background-image: linear-gradient(180deg, #13547a 0%, #80d0c7 100%);
+}
+.book_band2{
+	background: linear-gradient(325deg,yellow 0%,red 100%);
+}
+.book_band3{
+	background-image: linear-gradient(180deg, #13547a 0%, #80d0c7 100%);
+}
+.book_band4{
+	background: linear-gradient(325deg,yellow 0%,red 100%);
+}*/
+.book_img_box {
+  height: 120px;
+}
+.book_img_box img {
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
+}
+.book_box_word {
+  padding: 20px;
+  font-size: 16px;
+  box-sizing: border-box;
+  line-height: 30px;
+}
+.book_box_word h4 {
+  text-align: center;
+}
+.booking_select {
+  box-shadow: 0px 0px 10px 10px #fff;
+  transform: scale(1.2);
+}
+.animation_fade_right {
+  animation: fadeInRight 1.3s;
+  animation-fill-mode: forwards;
+}
+.animation_fade_left {
+  animation: fadeInLeft 1.3s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeIn {
+  animation: fadeIn 1.3s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounceInLeft {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-40px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInLeft {
+  animation: bounceInLeft 1.3s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation: fadeInDown 1.5s;
+  animation-fill-mode: forwards;
+}
+/*手機版*/ /*手機版*/ /*手機版*/ /*手機版*/ /*手機版*/
+@media screen and (max-width: 767px) {
+  .navbar {
+    position: fixed;
+    z-index: 10;
+    width: 70%;
+    left: -100%;
+    top: 50px;
+    background: rgba(30, 30, 30, 0.7);
+    height: auto;
+    text-align: center;
+    transition: 0.5s;
+  }
+  .navbar ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar ul li {
+    width: 90%;
+  }
+  .navbar a {
+    display: block;
+    border-bottom: 1px solid #e8bc35;
+  }
+  .navbar .nav_menu_about {
+    border-bottom: none;
+  }
+  .logo {
+    display: none;
+  }
+  .mb_nav {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    background-color: #000;
+  }
+  .logo_mb {
+    display: inline-block;
+    height: 30px;
+  }
+  .logo_mb img {
+    height: 100%;
+  }
+  .hb {
+    display: block;
+    position: fixed;
+    top: 0px;
+    z-index: 6;
+    width: 50px;
+    height: 50px;
+    /*background:rgba(30,30,30,0.7);*/
+  }
+  .hb:before {
+    content: "";
+    width: 86%;
+    height: 2px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+    background-color: #e8bc35;
+    box-shadow: 0px 10px 0px #e8bc35, 0px -10px 0px #e8bc35;
+  }
+  .open {
+    display: none;
+  }
+  .banner {
+    height: 30vh;
+    margin-top: 50px;
+  }
+  .Home .Home_slogan {
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+  }
+  .Home .Home_slogan h1 {
+    display: none;
+  }
+  .Home .Home_slogan p {
+    text-align: center;
+    line-height: 20px;
+    font-size: 16px;
+  }
+  .slogan_line {
+    width: 158px;
+    height: 38px;
+    margin-bottom: -19px;
+    margin-right: -79px;
+  }
+  .slogan_line .slogan {
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    letter-spacing: 0;
+    margin-bottom: -15px;
+    margin-right: -75px;
+    font-size: 30px;
+  }
+  .Home .bg_Home_Live {
+    height: 50vh;
+    margin-top: 20px;
+    background-attachment: scroll;
+  }
+  .Home .home_select h3 {
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-align: left;
+  }
+  .Home .Home_Whisky {
+    padding: 15px 10px 15px 10px;
+    box-sizing: border-box;
+    align-items: center;
+  }
+  .Home .Home_Whisky .diamond {
+    /*width: 200px;*/
+    width: 80%;
+    height: 110px;
+    transform: rotate(0);
+  }
+  .Home .Home_Whisky .whisky_word {
+    width: 70%;
+    padding: 10px;
+    text-align: left;
+    box-sizing: border-box;
+    margin-right: 0%;
+    /*margin-left: 5%;*/
+    /*padding-top: 20px;*/
+    z-index: 1;
+    text-align: right;
+  }
+  .Home_Whisky .whisky_word p {
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 20px;
+    z-index: 1;
+    text-align: left;
+  }
+  .Home_Whisky .whisky_word a {
+    font-size: 16px;
+    padding: 0px;
+    display: inline-block;
+  }
+  .Home_beer_cock {
+    width: 100%;
+    margin-top: 0;
+    padding: 10px 10px 0px 10px;
+    box-sizing: border-box;
+    height: auto;
+    background-position: left;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .Home_beer_cock .beer_word,
+  .Home_beer_cock .cocktail_word {
+    position: relative;
+    width: 70%;
+    padding: 10px 10px 0px 10px;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    text-align: right;
+  }
+  .Home_beer_cock h3 {
+    font-size: 20px;
+    text-align: left;
+  }
+  .Home_beer_cock p {
+    height: auto;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 10px;
+    text-align: left;
+  }
+  .Home_beer_cock a {
+    font-size: 16px;
+    padding: 10px 10px;
+    position: relative;
+    bottom: 0;
+  }
+  .Home_beer_cock .beer_img,
+  .Home_beer_cock .cocktail_img {
+    width: 30%;
+  }
+  .Home h2 {
+    font-size: 34px;
+    padding: 30px 0px 20px 0px;
+  }
+  .Home .bg_Home_contact h2 {
+    padding: 50px 0px 10px 0px;
+  }
+  .Home .bg_Home_Bartender h2 {
+    padding: 40px 0px 30px 0px;
+  }
+  .Home_Bartender {
+    text-align: right;
+  }
+  .Home_Bartender .line {
+    box-shadow: 1px 1px 50px 10px #f00, inset 1px 1px 50px 8px #ffc001;
+  }
+  .Home_Bartender .ph1 {
+    width: 60%;
+    top: -10px;
+    left: -4.166666%;
+    z-index: 1;
+    box-shadow: 0px 0px 1px 1px #aaa;
+  }
+  .Home_Bartender .ph2 {
+    top: 30px;
+    left: 65%;
+    width: 40%;
+    box-shadow: 0px 0px 1px 1px #aaa;
+  }
+  .Home_Bartender .ph3 {
+    top: 360px;
+    left: -5%;
+    width: 40%;
+    box-shadow: 0px 0px 1px 1px #aaa;
+  }
+  .Home_Bartender span {
+    display: none;
+  }
+  .Home_Bartender .word {
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+  }
+  .Home_Bartender a {
+    right: 8%;
+    padding: 10px 0;
+    font-size: 16px;
+  }
+  .Home_Live .liveBand_img {
+    display: none;
+  }
+  .Home_Live .liveBand_word {
+    width: 80%;
+    /*height: 100%;*/
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+  .Home_Live .liveBand_word p {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    font-size: 16px;
+  }
+  .Home_Live a {
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+  }
+  .Home_contact {
+    flex-wrap: wrap;
+  }
+  .Home_contact .Address_box {
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0px;
+    height: auto;
+    line-height: 1.5;
+  }
+  .Home_contact .Address_box p {
+    font-size: 16px;
+  }
+  .Home_contact .Map {
+    width: 100%;
+    height: 200px;
+  }
+  .Home_contact .Map iframe {
+    width: 100%;
+    height: 200px;
+  }
+  .Home_contact .icon {
+    margin: 10px 0 0 0;
+    width: 80%;
+    justify-content: space-around;
+  }
+  .Drink h2,
+  .Food h2,
+  .LiveMusic h2 {
+    font-size: 34px;
+    font-weight: 900;
+    padding: 15px 0px 5px 0px;
+  }
+  .Drink .DrinkMenu_box,
+  .Food .FoodMenu_box {
+    margin-top: 0px;
+  }
+  .Drink .DrinkMenu,
+  .Food .FoodMenu {
+    height: auto;
+    margin-bottom: 30px;
+    display: block;
+  }
+  .Drink .DrinkMenu .name,
+  .Food .FoodMenu .name {
+    font-size: 7vw;
+  }
+  .Drink .DrinkMenu .content,
+  .Food .FoodMenu .content {
+    font-size: 6vw;
+    border-bottom: 3px solid #ddd;
+  }
+  .Drink .DrinkMenu .price,
+  .Food .FoodMenu .price {
+    font-size: 7vw;
+    margin-bottom: 0;
+    right: 10px;
+  }
+  [class^="col-"] {
+    float: left;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+  .Drink .col-3y,
+  .Food .col-3y {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .LiveMusic .slogan_line {
+    display: none;
+  }
+  .LiveMusic table {
+    width: 80%;
+    height: 100px;
+    font-size: 4vw;
+    line-height: 6vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 2;
+  }
+  .LiveMusic table .title {
+    font-size: 16px;
+  }
+  .LiveMusic .ShowIntr {
+    margin-top: 50px;
+  }
+  .LiveMusic .ShowIntr .introd {
+    /*height: 170px;*/
+    height: auto;
+  }
+  .LiveMusic .ShowIntr .introd_word {
+    padding: 0px;
+  }
+  .LiveMusic .ShowIntr h3 {
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 0;
+  }
+  .LiveMusic .ShowIntr p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .LiveMusic .bg_band {
+    margin-top: 50px;
+  }
+  .LiveMusic .band_box {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 0;
+    opacity: 1;
+  }
+  .LiveMusic .band_box_line {
+    display: none;
+  }
+  .LiveMusic .band_box2,
+  .LiveMusic .band_box4 {
+    right: 0%;
+  }
+  .LiveMusic .band_box_img {
+    width: 100%;
+    /*bottom: 0;*/
+  }
+  .LiveMusic .band_box_word {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 30px;
+    text-shadow: 1px 1px 5px #222;
+    background-color: rgba(50, 50, 50, 0.5);
+  }
+  .LiveMusic .band_box_word h4 {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+  }
+  .About .about_box {
+    padding-top: 20px;
+  }
+  .About .about_box .about_box_960 p {
+    padding: 10px;
+  }
+  .About .about_box .contbox {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .About .about_box .flex_box {
+    flex-wrap: wrap;
+  }
+  .About .about_box .flex_box2 {
+    flex-direction: column-reverse;
+  }
+  .About .about_box .hr_line {
+    margin: 5px 0px;
+  }
+  .Book_box {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+    padding-top: 50px;
+    box-sizing: border-box;
+  }
+  .Book_box .form_bgcolor {
+    width: 80%;
+    height: auto;
+    order: 1;
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .Book_box table {
+    width: 100%;
+    text-align: center;
+  }
+
+  .book_band {
+    width: 45%;
+    height: 140px;
+    margin-top: 10px;
+    border-radius: 0;
+    justify-content: center;
+  }
+  .book_img_box {
+    height: auto;
+  }
+  .book_box_word {
+    padding: 10px;
+    line-height: 20px;
+  }
+  .book_box_word p {
+    display: none;
+  }
+  .footer {
+    margin: 5px 0 0 0;
+    line-height: 14px;
+  }
+}
+
+/*平板*/ /*平板*/ /*平板*/ /*平板*/
+@media screen and (min-width: 992px) {
+  .LiveMusic .ShowIntr h3 {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  .LiveMusic .ShowIntr .introd_word {
+    padding: 20px;
+  }
+  .About .about_box .about_box_960 p {
+    padding: 20px;
+  }
+}
+
+/*桌機*/ /*桌機*/ /*桌機*/
+@media screen and (min-width: 1200px) {
+  .navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: -webkit-linear-gradient(
+      135deg,
+      rgba(50, , 0, 5, , 0.7) 7rgba (10, , 10, , 10, 075)
+    );
+  }
+  .hb {
+    display: none;
+  }
+  .col-3x {
+    display: inline-block;
+    width: 20%;
+  }
+  .col-3y {
+    width: 26.666666%;
+  }
+  .LiveMusic .ShowIntr .introd_word {
+    padding: 40px;
+  }
+  .LiveMusic .ShowIntr h3 {
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  .About .about_box .about_box_960 p {
+    padding: 30px;
+  }
+}
+.col-1 {
+  width: 8.333333%;
+}
+.col-2 {
+  width: 16.666666%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.333333%;
+}
+.col-5 {
+  width: 41.666666%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.333333%;
+}
+.col-8 {
+  width: 66.666666%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.333333%;
+}
+.col-11 {
+  width: 91.666666%;
+}
+.col-12 {
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .col-xs-1 {
+    width: 8.333333%;
+  }
+  .col-xs-2 {
+    width: 16.666666%;
+  }
+  .col-xs-3 {
+    width: 25%;
+  }
+  .col-xs-4 {
+    width: 33.333333%;
+  }
+  .col-xs-5 {
+    width: 41.666666%;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .col-xs-7 {
+    width: 58.333333%;
+  }
+  .col-xs-8 {
+    width: 66.666666%;
+  }
+  .col-xs-9 {
+    width: 75%;
+  }
+  .col-xs-10 {
+    width: 83.333333%;
+  }
+  .col-xs-11 {
+    width: 91.666666%;
+  }
+  .col-xs-12 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .col-md-1 {
+    width: 8.333333%;
+  }
+  .col-md-2 {
+    width: 16.666666%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.333333%;
+  }
+  .col-md-5 {
+    width: 41.666666%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.333333%;
+  }
+  .col-md-8 {
+    width: 66.666666%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-10 {
+    width: 83.333333%;
+  }
+  .col-md-11 {
+    width: 91.666666%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .col-lg-1 {
+    width: 8.333333%;
+  }
+  .col-lg-2 {
+    width: 16.666666%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-3x {
+    width: 0%;
+  }
+  .col-lg-3y {
+    width: 26.666666%;
+  }
+  .col-lg-4 {
+    width: 33.333333%;
+  }
+  .col-lg-5 {
+    width: 41.666666%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.333333%;
+  }
+  .col-lg-8 {
+    width: 66.666666%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  .col-lg-10 {
+    width: 83.333333%;
+  }
+  .col-lg-11 {
+    width: 91.666666%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .col-xl-1 {
+    width: 8.333333%;
+  }
+  .col-xl-2 {
+    width: 16.666666%;
+  }
+  .col-xl-3 {
+    width: 25%;
+  }
+  .col-xl-3x {
+    width: 20%;
+  }
+  .col-xl-3y {
+    width: 26.666666%;
+  }
+  .col-xl-4 {
+    width: 33.333333%;
+  }
+  .col-xl-5 {
+    width: 41.666666%;
+  }
+  .col-xl-6 {
+    width: 50%;
+  }
+  .col-xl-7 {
+    width: 58.333333%;
+  }
+  .col-xl-8 {
+    width: 66.666666%;
+  }
+  .col-xl-9 {
+    width: 75%;
+  }
+  .col-xl-10 {
+    width: 83.333333%;
+  }
+  .col-xl-11 {
+    width: 91.666666%;
+  }
+  .col-xl-12 {
+    width: 100%;
+  }
+}

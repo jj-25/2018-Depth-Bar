@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+      shrink-to-fit="no"
+    />
+    <title>DEPTH BAR</title>
+    <link rel="stylesheet" type="text/css" href="cssreset.css" />
+    <link rel="stylesheet" href="depth_rwd.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        function revealOnScrollL() {
+          var scrolled = $(window).scrollTop();
+          // 视窗，即viewport，页面可视范围的窗口
+          $(".fade_right").each(function () {
+            var current = $(this), // 当前元素
+              w_height = $(window).outerHeight(), //视窗高度
+              offsetTop = current.offset().top; //当前元素离顶部的高度
+            // 计算高度差（此处预留50是为了看效果）
+            // 当元素进入视窗时，添加class
+            if (scrolled + w_height > offsetTop) {
+              current.addClass("animation_fade_right");
+            } //else {
+            // current.removeClass("fadeIn");
+            // }
+          });
+          $(".fade_left").each(function () {
+            var current = $(this), // 当前元素
+              w_height = $(window).outerHeight(), //视窗高度
+              offsetTop = current.offset().top; //当前元素离顶部的高度
+            // 计算高度差（此处预留50是为了看效果）
+            // 当元素进入视窗时，添加class
+            if (scrolled + w_height > offsetTop) {
+              current.addClass("bounceInLeft");
+            } //else {
+            // current.removeClass("fadeIn");
+            // }
+          });
+          $(".bartender").each(function () {
+            var current = $(this), // 当前元素
+              w_height = $(window).outerHeight(), //视窗高度
+              offsetTop = current.offset().top; //当前元素离顶部的高度
+            // 计算高度差（此处预留50是为了看效果）
+            // 当元素进入视窗时，添加class
+            if (scrolled + w_height > offsetTop) {
+              current.addClass("fadeIn");
+            } //else {
+            // current.removeClass("fadeIn");
+            // }
+          });
+          $(".liveBand_img").each(function () {
+            var current = $(this), // 当前元素
+              w_height = $(window).outerHeight(), //视窗高度
+              offsetTop = current.offset().top; //当前元素离顶部的高度
+            // 计算高度差（此处预留50是为了看效果）
+            // 当元素进入视窗时，添加class
+            if (scrolled + w_height > offsetTop) {
+              current.addClass("animation_fade_left");
+            } //else {
+            // current.removeClass("fadeIn");
+            // }
+          });
+        }
+        $(window).on("scroll", revealOnScrollL);
+
+        // //捲到一個地方字會跑出來的動畫
+        // //捲軸位置歸零
+        // var _scroTop = 0;
+        // //當視窗開始捲動時,取得捲軸位置
+        // $(window).scroll(function(){
+        // 	_scrpTop = $(window).scrollTop();
+        // 	console.log(_scrpTop);
+        // 	//使用for迴圈和$('div').eq(索引值)取得第幾個物件的.offset().top至頂端的高度
+        // 	for(var i = 0, k = $('.fade_right').length; i < k; i++){
+        // 	//當達到判斷式時，啟動程式
+        // 		if(_scrpTop > $('.fade_right').eq(i).offset().top - 400){
+        // 			$('.fade_right').eq(i).addClass('animation_fade_right');
+        // 		}
+        // 	}
+        // 	for(var i = 0, k = $('.fade_left').length; i < k; i++){
+        // 		if(_scrpTop > $('.fade_left').eq(i).offset().top - 500){
+        // 			$('.fade_left').eq(i).addClass('bounceInLeft');
+        // 		}
+        // 	}
+        // 	for(var i = 0, k = $('.bartender').length; i < k; i++){
+        // 		if(_scrpTop > $('.bartender').eq(i).offset().top - 500){
+        // 			$('.bartender').eq(i).addClass('fadeIn');
+        // 			console.log('RUN');
+        // 		}
+        // 	}
+        // 	for(var i = 0, k = $('.liveBand_img').length; i < k; i++){
+        // 		if(_scrpTop > $('.liveBand_img').eq(i).offset().top - 500){
+        // 			$('.liveBand_img').eq(i).addClass('animation_fade_left');
+        // 		}
+        // 	}
+        // });
+      });
+    </script>
+
+    <style type="text/css">
+      * {
+        /*outline: 1px solid red;*/
+      }
+    </style>
+  </head>
+  <body class="Home">
+    <!------------navbar------------->
+    <input type="checkbox" name="" id="menu-control" />
+    <label class="hb" for="menu-control"></label>
+    <div class="mb_nav">
+      <a href="index.html">
+        <img class="logo_mb" src="logo.png" />
+      </a>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <div class="logo">
+          <a href="index.html" alt="Depth_logo">
+            <img src="logo.png" />
+          </a>
+        </div>
+        <li><a class="nav_menu_drink" href="drink_rwd.html">DRINK</a></li>
+        <li><a class="nav_menu_food" href="food_rwd.html">FOOD</a></li>
+        <li>
+          <a class="nav_menu_music" href="livemusic_RWD.html">LIVE&nbspMUSIC</a>
+        </li>
+        <li><a class="nav_menu_about" href="about_RWD.html">ABOUT</a></li>
+        <li><p class="open">17:00 ~ 02:00 Monday Closed</p></li>
+      </ul>
+    </nav>
+    <!------------banner------------->
+    <div class="banner">
+      <div class="Home_slogan">
+        <h1>DEPTH BAR</h1>
+        <p>Soup of the Day Whisky and Cocktail.</p>
+      </div>
+      <div class="banner_button_box">
+        <div class="banner_button button1"></div>
+        <div class="banner_button button2"></div>
+        <div class="banner_button button3"></div>
+      </div>
+    </div>
+
+    <div class="home_select">
+      <div class="bg_Home_Whisky">
+        <div class="Home_Whisky box">
+          <!------------whisky------------->
+          <div class="whisky_word">
+            <div class="diamond"></div>
+            <h3>Whisky</h3>
+            <p>
+              Using the pure water source of the Snow Mountain Range to create a
+              smooth and mellow wine.
+            </p>
+            <a href="drink_RWD.html">Menu ></a>
+          </div>
+          <div class="whisky_img fade_right">
+            <img src="whisky_270x300.png" alt="whisky" />
+          </div>
+        </div>
+      </div>
+      <!------------beer & cocktail------------->
+      <div class="bg_Home_beer_cock">
+        <div class="Home_beer_cock box">
+          <div class="beer_img fade_left">
+            <img src="beer.png" alt="beer" />
+          </div>
+          <div class="beer_word">
+            <h3>Beer</h3>
+            <p>
+              We Selection 9 classic Beer and this beer as cold as your
+              ex-girlfriends.
+            </p>
+            <a href="drink_RWD.html">Menu ></a>
+          </div>
+          <div class="cocktail_img fade_left">
+            <img src="cocktail_125.png" alt="cocktail" />
+          </div>
+          <div class="cocktail_word">
+            <h3>Cocktail</h3>
+            <p>
+              Old fashioned, and daiquiri will simply never go out of style.
+              Here are 9 of the best ones to order at bar.
+            </p>
+            <a href="drink_RWD.html">Menu ></a>
+          </div>
+        </div>
+      </div>
+      <!------------bartender------------->
+      <div class="bg_Home_Bartender">
+        <h2>Our Bartender</h2>
+        <div class="box Home_Bartender">
+          <div class="line">
+            <div class="bartender ph1">
+              <img src="bartender-p1.png" alt="bartender" />
+              <span
+                >Ashely
+                <p>5 years of experience</p>
+              </span>
+            </div>
+            <div class="bartender ph2">
+              <img src="bartender-p2.jpg" alt="bartender" />
+              <span
+                >George
+                <p>10 years of experience</p>
+              </span>
+            </div>
+            <div class="bartender ph3">
+              <img src="bartender-p3.jpg" alt="bartender" />
+              <span
+                >Emma
+                <p>6 years of experience</p>
+              </span>
+            </div>
+            <div class="word">
+              <p>
+                Bartenders are rigorously trained and have professional
+                bartending techniques.
+              </p>
+            </div>
+            <a href="about_RWD.html"> Know about us > </a>
+          </div>
+        </div>
+      </div>
+      <!------------live music------------->
+      <div class="bg_Home_Live">
+        <div class="box Home_Live">
+          <h2>Live Music</h2>
+          <div class="liveBand_img">
+            <img src="band.jpg" alt="liveband" />
+          </div>
+          <div class="liveBand_word">
+            <p>
+              The Depth every weekend nights courtesy of hippest gigter
+              promoters Eat Your Own Ears and Heart.
+            </p>
+            <a class="schedule" href="livemusic_RWD.html">Schedule ></a>
+          </div>
+        </div>
+      </div>
+      <!------------map------------->
+      <div class="bg_Home_contact">
+        <h2>Contact Us</h2>
+        <div class="box Home_contact">
+          <div class="Address_box">
+            <div class="Address">
+              <p>Tel : 78-978-7878</p>
+              <p>E-mail : depth_bar@gmail.com</p>
+              <p>Address : 580 Cherry St, Macon, GA 31201,USA</p>
+              <p>Opening : 5:00 p.m. to 2:00 a.m.</p>
+              <p>Closed Monday</p>
+            </div>
+            <div class="icon">
+              <a class="icon_s" href=""
+                ><img src="facebook.png" alt="facebook"
+              /></a>
+              <a class="icon_s" href=""
+                ><img src="twitter.png" alt="twitter"
+              /></a>
+              <a class="icon_s" href=""
+                ><img src="instagram.png" alt="instagram"
+              /></a>
+            </div>
+          </div>
+          <div class="Map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3352.3445966141358!2d-83.63102498517186!3d32.836126588277175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f3fe7b6f07cf0b%3A0xd49dd48b775753ee!2zNTgwIENoZXJyeSBTdCwgTWFjb24sIEdBIDMxMjAx576O5ZyL!5e0!3m2!1szh-TW!2stw!4v1540022034698"
+              width="600"
+              height="300"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen
+            ></iframe>
+            <!-- <img src="Map_600x300.jpg" alt="map"> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Tel:78-978-7878 Address:580 Cherry St, Macon,GA</p>
+      <p>Copyright©2018 Depth All right reserved</p>
+    </div>
+  </body>
+</html>

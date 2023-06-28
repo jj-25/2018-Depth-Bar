@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+      shrink-to-fit="no"
+    />
+    <title>Depth_Food</title>
+    <link rel="stylesheet" type="text/css" href="cssreset.css" />
+    <link rel="stylesheet" href="depth_rwd.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        function revealOnScrollL() {
+          var scrolled = $(window).scrollTop();
+          // 视窗，即viewport，页面可视范围的窗口
+          $(".FoodMenuImg").each(function () {
+            var current = $(this), // 当前元素
+              w_height = $(window).outerHeight(), //视窗高度
+              offsetTop = current.offset().top; //当前元素离顶部的高度
+            // 计算高度差（此处预留50是为了看效果）
+            // 当元素进入视窗时，添加class
+            if (scrolled + w_height > offsetTop) {
+              current.addClass("fadeInDown");
+            } //else {
+            // current.removeClass("fadeIn");
+            // }
+          });
+        }
+        $(window).on("scroll", revealOnScrollL);
+      });
+    </script>
+    <style type="text/css">
+      * {
+        /*outline: 1px solid red;*/
+      }
+      .Food .nav_menu_food {
+        color: #e8bc35;
+      }
+    </style>
+  </head>
+  <body class="Food">
+    <!------------navbar------------->
+    <input type="checkbox" name="" id="menu-control" />
+    <label class="hb" for="menu-control"></label>
+    <div class="mb_nav">
+      <a href="index.html">
+        <img class="logo_mb" src="logo.png" />
+      </a>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <div class="logo">
+          <a href="index.html" alt="Depth_logo">
+            <img src="logo.png" />
+          </a>
+        </div>
+        <li><a class="nav_menu_drink" href="drink_rwd.html">DRINK</a></li>
+        <li><a class="nav_menu_food" href="food_rwd.html">FOOD</a></li>
+        <li>
+          <a class="nav_menu_music" href="livemusic_RWD.html">LIVE&nbspMUSIC</a>
+        </li>
+        <li><a class="nav_menu_about" href="about_RWD.html">ABOUT</a></li>
+        <li><p class="open">17:00 ~ 02:00 Monday Closed</p></li>
+      </ul>
+    </nav>
+    <!------------banner------------->
+    <div class="banner">
+      <div class="slogan_line">
+        <div class="slogan">
+          <h1>FOOD</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="FoodMenu_bg bg">
+      <div class="box FoodMenu_box">
+        <!------------Appetizer------------->
+        <h2>Appetizer</h2>
+        <div class="col-3x">
+          <div class="FoodMenu FoodMenuImg">
+            <img class="appe_img" src="food_app04.png" alt="" />
+          </div>
+        </div>
+        <div class="col-3y col-3y-1">
+          <div class="FoodMenu">
+            <div class="hover_box appe1">
+              <p class="name">Pick three</p>
+              <p class="price">$550</p>
+              <p class="content">Mozzarella/Potato/Fried</p>
+            </div>
+            <div class="hover_box appe2">
+              <p class="name">Mozzarella</p>
+              <p class="price">$300</p>
+              <p class="content">Sprinkled with romano</p>
+            </div>
+            <div class="hover_box appe3">
+              <p class="name">Potato Skins</p>
+              <p class="price">$200</p>
+              <p class="content">Mozo and asiago cheese</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3y">
+          <div class="FoodMenu">
+            <div class="hover_box appe4">
+              <p class="name">Buffalo Wings</p>
+              <p class="price">$150</p>
+              <p class="content">Crispy bacon and sour</p>
+            </div>
+            <div class="hover_box appe5">
+              <p class="name">Three Chili</p>
+              <p class="price">$150</p>
+              <p class="content">Served with celery sticks</p>
+            </div>
+            <div class="hover_box appe6">
+              <p class="name">Fish Chips</p>
+              <p class="price">$200</p>
+              <p class="content">Spicy Buffalo sauce</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3y">
+          <div class="FoodMenu">
+            <div class="hover_box appe7">
+              <p class="name">Chicken Strips</p>
+              <p class="price">$250</p>
+              <p class="content">Garlic butter chilie</p>
+            </div>
+            <div class="hover_box appe8">
+              <p class="name">Frce Finger</p>
+              <p class="price">$200</p>
+              <p class="content">With lime-garlic</p>
+            </div>
+            <div class="hover_box appe9">
+              <p class="name">French wing</p>
+              <p class="price">$150</p>
+              <p class="content">Golden frie calam</p>
+            </div>
+          </div>
+        </div>
+        <div class="dashed"></div>
+        <!------------Burgers------------->
+        <h2>Burgers</h2>
+        <div class="col-3x">
+          <div class="FoodMenu FoodMenuImg">
+            <img src="food_app02.png" alt="" />
+          </div>
+        </div>
+        <div class="col-3y">
+          <div class="FoodMenu">
+            <p class="name">Beff Mac</p>
+            <p class="price">$250</p>
+            <p class="content">Garlic butter chilie</p>
+            <p class="name">Cheese Burger</p>
+            <p class="price">$200</p>
+            <p class="content">With lime-garlic</p>
+            <p class="name">Paneer Burger</p>
+            <p class="price">$250</p>
+            <p class="content">Spicy Buffalo sauce</p>
+          </div>
+        </div>
+        <div class="col-3y">
+          <div class="FoodMenu">
+            <p class="name">Veg Burger</p>
+            <p class="price">$150</p>
+            <p class="content">Mozo and asiago chees</p>
+            <p class="name">fish Burger</p>
+            <p class="price">$150</p>
+            <p class="content">Sprinkled with romano</p>
+            <p class="name">Cheese Burger</p>
+            <p class="price">$150</p>
+            <p class="content">Smoked turkey melted</p>
+          </div>
+        </div>
+        <div class="col-3y">
+          <div class="FoodMenu">
+            <p class="name">Glen Burger</p>
+            <p class="price">$150</p>
+            <p class="content">Swiss cheese coles</p>
+            <p class="name">Big Mac</p>
+            <p class="price">$150</p>
+            <p class="content">Served with crispy</p>
+            <p class="name">George Burger</p>
+            <p class="price">$250</p>
+            <p class="content">Smoked with turkey</p>
+          </div>
+        </div>
+        <div class="dashed"></div>
+        <!------------Desserts------------->
+        <h2>Desserts</h2>
+        <div class="col-3x">
+          <div class="FoodMenu FoodMenuImg">
+            <img src="food_app03.png" alt="" />
+          </div>
+        </div>
+        <div class="col-3y">
+          <div class="FoodMenu">
+            <p class="name">Cream Cake</p>
+            <p class="price">$250</p>
+            <p class="content">Vanilla ice cream</p>
+
+            <p class="name">Cheese Cake</p>
+            <p class="price">$200</p>
+            <p class="content">Sweeten wonton crisp</p>
+
+            <p class="name">Fruit Cake</p>
+            <p class="price">$150</p>
+            <p class="content">Mango and strawberr</p>
+          </div>
+        </div>
+        <div class="col-3y">
+          <div class="FoodMenu">
+            <p class="name">Ice Cream</p>
+            <p class="price">$200</p>
+            <p class="content">Mango and strawberr</p>
+            <p class="name">Chocolate</p>
+            <p class="price">$200</p>
+            <p class="content">Vanilla ice cream</p>
+            <p class="name">Apple Pie</p>
+            <p class="price">$200</p>
+            <p class="content">Mango and strawberr</p>
+          </div>
+        </div>
+        <div class="col-3y">
+          <div class="FoodMenu">
+            <p class="name">Sweet Swirls</p>
+            <p class="price">$150</p>
+            <p class="content">Vanilla ice cream</p>
+            <p class="name">Sassy Swirls</p>
+            <p class="price">$150</p>
+            <p class="content">Sweeten wonton crisp</p>
+            <p class="name">Glen Swirls</p>
+            <p class="price">$150</p>
+            <p class="content">Mango and strawberr</p>
+          </div>
+        </div>
+        <div class="dashed dashed_end"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Tel:78-978-7878 Address:580 Cherry St, Macon,GA</p>
+      <p>Copyright©2018 Depth All right reserved</p>
+    </div>
+  </body>
+</html>
