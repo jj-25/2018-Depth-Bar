@@ -145,20 +145,20 @@ img {
   position: relative;
 }
 .Home .banner {
-  background-image: url(bg01_shaw.png);
+  background-image: url(index_bg.png);
 }
 .Drink .banner {
-  background-image: url(drink_bg.avif);
+  background-image: url(drink/drink_bg.avif);
 }
 .Food .banner {
-  background-image: url(food_bg.jpeg);
+  background-image: url(food/food_bg.jpeg);
 }
 .LiveMusic .banner {
-  background-image: url(live_bg.jpeg);
+  background-image: url(livemusic/livemusic_bg.jpeg);
 }
 .About .banner {
   background-position: center top;
-  background-image: url(about-bg.avif);
+  background-image: url(about/about_bg.avif);
 }
 .Home .Home_slogan {
   position: absolute;
@@ -277,7 +277,6 @@ img {
 }
 .Home_beer_cock {
   width: 100%;
-  /*height: 70vh;*/
   height: 500px;
   background: url(bg02_mix_1265x450.png) no-repeat;
   background-position: center bottom;

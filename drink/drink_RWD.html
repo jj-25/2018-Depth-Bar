@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+      shrink-to-fit="no"
+    />
+    <title>Depth_Drink</title>
+    <link rel="stylesheet" type="text/css" href="../cssreset.css" />
+    <link rel="stylesheet" href="../depth_rwd.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".cock1").hover(function () {
+          $(".cock_img").attr("src", "cocktail_3_500x500.png");
+        });
+        $(".cock2").hover(function () {
+          $(".cock_img").attr("src", "cocktail_500x500.png");
+        });
+        $(".cock3").hover(function () {
+          $(".cock_img").attr("src", "cocktail_800x800.png");
+        });
+        $(".cock4").hover(function () {
+          $(".cock_img").attr("src", "cocktail_4_1024x1024.png");
+        });
+        $(".cock5").hover(function () {
+          $(".cock_img").attr("src", "cocktail_5_500x500.png");
+        });
+        $(".cock6").hover(function () {
+          $(".cock_img").attr("src", "cocktail_6_500x500.png");
+        });
+        $(".cock7").hover(function () {
+          $(".cock_img").attr("src", "cocktail_7_1000x1000.png");
+        });
+        $(".cock8").hover(function () {
+          $(".cock_img").attr("src", "cocktail_8_1000x1000.png");
+        });
+        $(".cock9").hover(function () {
+          $(".cock_img").attr("src", "cocktail_9_1000x1000.png");
+        });
+        function revealOnScrollL() {
+          var scrolled = $(window).scrollTop();
+          // 视窗，即viewport，页面可视范围的窗口
+          $(".DrinkMenuImg").each(function () {
+            var current = $(this), // 当前元素
+              w_height = $(window).outerHeight(), //视窗高度
+              offsetTop = current.offset().top; //当前元素离顶部的高度
+            // 计算高度差（此处预留50是为了看效果）
+            // 当元素进入视窗时，添加class
+            if (scrolled + w_height > offsetTop) {
+              current.addClass("bounceInLeft");
+            } //else {
+            // current.removeClass("fadeIn");
+            // }
+          });
+        }
+        $(window).on("scroll", revealOnScrollL);
+      });
+    </script>
+    <style type="text/css">
+      .Drink .nav_menu_drink {
+        color: #e8bc35;
+      }
+    </style>
+  </head>
+  <body class="Drink">
+    <!------------navbar------------->
+    <input type="checkbox" name="" id="menu-control" />
+    <label class="hb" for="menu-control"></label>
+    <div class="mb_nav">
+      <a href="../index.html">
+        <img class="logo_mb" src="../logo.png" />
+      </a>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <div class="logo">
+          <a href="../index.html" alt="Depth_logo">
+            <img src="../logo.png" />
+          </a>
+        </div>
+        <li><a class="nav_menu_drink" href="drink_RWD.html">DRINK</a></li>
+        <li><a class="nav_menu_food" href="../food/food_RWD.html">FOOD</a></li>
+        <li>
+          <a class="nav_menu_music" href="../livemusic/livemusic_RWD.html"
+            >LIVE&nbspMUSIC</a
+          >
+        </li>
+        <li>
+          <a class="nav_menu_about" href="../about/about_RWD.html">ABOUT</a>
+        </li>
+        <li><p class="open">17:00 ~ 02:00 Monday Closed</p></li>
+      </ul>
+    </nav>
+    <!------------banner------------->
+    <div class="banner">
+      <div class="slogan_line">
+        <div class="slogan">
+          <h1>DRINK</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="DrinkMenu_bg bg">
+      <div class="box DrinkMenu_box">
+        <!------------cocktail------------->
+        <h2>Cocktails</h2>
+        <div class="col-3x">
+          <div class="DrinkMenu DrinkMenuImg">
+            <img class="cock_img" src="cocktail_3_500x500.png" alt="" />
+          </div>
+        </div>
+        <div class="col-3y">
+          <div class="DrinkMenu">
+            <div class="hover_box cock1">
+              <p class="name">Colitan</p>
+              <p class="price">$350</p>
+              <p class="content">Shaken berry & lime juice</p>
+            </div>
+            <div class="hover_box cock2">
+              <p class="name">Mojito</p>
+              <p class="price">$300</p>
+              <p class="content">Gin & soda & lorem</p>
+            </div>
+            <div class="hover_box cock3">
+              <p class="name">Whisky Sour</p>
+              <p class="price">$450</p>
+              <p class="content">Lemon & Whisky & lorem</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3y">
+          <div class="DrinkMenu">
+            <div class="hover_box cock4">
+              <p class="name">Daiquiri</p>
+              <p class="price">$550</p>
+              <p class="content">Berry & lime & lorem</p>
+            </div>
+            <div class="hover_box cock5">
+              <p class="name">Tom Collins</p>
+              <p class="price">$500</p>
+              <p class="content">Lime & muddled & lorem</p>
+            </div>
+            <div class="hover_box cock6">
+              <p class="name">Archangel</p>
+              <p class="price">$550</p>
+              <p class="content">Butterfly & berry & lorem</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3y">
+          <div class="DrinkMenu">
+            <div class="hover_box cock7">
+              <p class="name">Perfect Storm</p>
+              <p class="price">$550</p>
+              <p class="content">Lime juice & ginger</p>
+            </div>
+            <div class="hover_box cock8">
+              <p class="name">Yager Rock</p>
+              <p class="price">$550</p>
+              <p class="content">Redbull & yager & lorem</p>
+            </div>
+            <div class="hover_box cock9">
+              <p class="name">R Bee</p>
+              <p class="price">$&nbsp80</p>
+              <p class="content">Whisbih & soda & med</p>
+            </div>
+          </div>
+        </div>
+        <div class="dashed"></div>
+        <!------------whisky------------->
+        <h2>Whisky</h2>
+        <div class="col-3x">
+          <div class="DrinkMenu DrinkMenuImg">
+            <img src="whisky_454x400_2.png" alt="" />
+          </div>
+        </div>
+        <div class="col-3y col-3y-1">
+          <div class="DrinkMenu">
+            <p class="name">Glenfiddich</p>
+            <p class="price">$550</p>
+            <p class="content">A 12 years Malt Whisky</p>
+            <p class="name">Jack Daniel</p>
+            <p class="price">$500</p>
+            <p class="content">A Sour Tennessee Whisky</p>
+            <p class="name">Jamesones</p>
+            <p class="price">$450</p>
+            <p class="content">A Blended lrish Whisky</p>
+          </div>
+        </div>
+        <div class="col-3y">
+          <div class="DrinkMenu">
+            <p class="name">Beam White</p>
+            <p class="price">$600</p>
+            <p class="content">A 15 years Single Malt</p>
+            <p class="name">Wild Turkey</p>
+            <p class="price">$550</p>
+            <p class="content">Kentucky Bourbon</p>
+            <p class="name">Absolut</p>
+            <p class="price">$550</p>
+            <p class="content">Premium swedish lorem</p>
+          </div>
+        </div>
+        <div class="col-3y">
+          <div class="DrinkMenu">
+            <p class="name">Plymouth</p>
+            <p class="price">$500</p>
+            <p class="content">Distilled in England</p>
+            <p class="name">Tanqueray</p>
+            <p class="price">$500</p>
+            <p class="content">A Blended lrish Whisk</p>
+            <p class="name">Cizano Blaco</p>
+            <p class="price">$500</p>
+            <p class="content">A classic Vermouth</p>
+          </div>
+        </div>
+        <div class="dashed"></div>
+        <!------------beer------------->
+        <h2>Beer</h2>
+        <div class="col-3x">
+          <div class="DrinkMenu DrinkMenuImg">
+            <img src="beer_236_200.png" alt="" />
+          </div>
+        </div>
+        <div class="col-3y">
+          <div class="DrinkMenu">
+            <p class="name">Corona</p>
+            <p class="price">$200</p>
+            <p class="content">Mexican beer 4.5% Abv</p>
+            <p class="name">Modelo</p>
+            <p class="price">$200</p>
+            <p class="content">Modelo beer 4.5% Abv</p>
+            <p class="name">Negra Modelo</p>
+            <p class="price">$200</p>
+            <p class="content">Modelo beer 4.5% Abv</p>
+          </div>
+        </div>
+        <div class="col-3y">
+          <div class="DrinkMenu">
+            <p class="name">Becks</p>
+            <p class="price">$200</p>
+            <p class="content">Janapan Beer 5.0% Abv</p>
+            <p class="name">Bulmers</p>
+            <p class="price">$200</p>
+            <p class="content">Janapan Beer 3.0% Abv</p>
+            <p class="name">Desperados</p>
+            <p class="price">$200</p>
+            <p class="content">Janapan Beer 5.9% Abv</p>
+          </div>
+        </div>
+        <div class="col-3y">
+          <div class="DrinkMenu">
+            <p class="name">Taiwan Beer</p>
+            <p class="price">$150</p>
+            <p class="content">Taiwan Beer 3.5% Abv</p>
+            <p class="name">Magners Cider</p>
+            <p class="price">$150</p>
+            <p class="content">Taiwan Beer 5.0% Abv</p>
+            <p class="name">London Pride</p>
+            <p class="price">$150</p>
+            <p class="content">Taiwan Beer 4.7% Abv</p>
+          </div>
+        </div>
+        <div class="dashed dashed_end"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Tel:78-978-7878 Address:580 Cherry St, Macon,GA</p>
+      <p>Copyright©2018 Depth All right reserved</p>
+    </div>
+  </body>
+</html>
