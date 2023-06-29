@@ -28,9 +28,7 @@
             // 当元素进入视窗时，添加class
             if (scrolled + w_height > offsetTop) {
               current.addClass("animation_fade_right");
-            } //else {
-            // current.removeClass("fadeIn");
-            // }
+            }
           });
           $(".fade_left").each(function () {
             var current = $(this), // 当前元素
@@ -40,9 +38,7 @@
             // 当元素进入视窗时，添加class
             if (scrolled + w_height > offsetTop) {
               current.addClass("bounceInLeft");
-            } //else {
-            // current.removeClass("fadeIn");
-            // }
+            }
           });
           $(".bartender").each(function () {
             var current = $(this), // 当前元素
@@ -52,9 +48,7 @@
             // 当元素进入视窗时，添加class
             if (scrolled + w_height > offsetTop) {
               current.addClass("fadeIn");
-            } //else {
-            // current.removeClass("fadeIn");
-            // }
+            }
           });
           $(".liveBand_img").each(function () {
             var current = $(this), // 当前元素
@@ -64,52 +58,12 @@
             // 当元素进入视窗时，添加class
             if (scrolled + w_height > offsetTop) {
               current.addClass("animation_fade_left");
-            } //else {
-            // current.removeClass("fadeIn");
-            // }
+            }
           });
         }
         $(window).on("scroll", revealOnScrollL);
-
-        // //捲到一個地方字會跑出來的動畫
-        // //捲軸位置歸零
-        // var _scroTop = 0;
-        // //當視窗開始捲動時,取得捲軸位置
-        // $(window).scroll(function(){
-        // 	_scrpTop = $(window).scrollTop();
-        // 	console.log(_scrpTop);
-        // 	//使用for迴圈和$('div').eq(索引值)取得第幾個物件的.offset().top至頂端的高度
-        // 	for(var i = 0, k = $('.fade_right').length; i < k; i++){
-        // 	//當達到判斷式時，啟動程式
-        // 		if(_scrpTop > $('.fade_right').eq(i).offset().top - 400){
-        // 			$('.fade_right').eq(i).addClass('animation_fade_right');
-        // 		}
-        // 	}
-        // 	for(var i = 0, k = $('.fade_left').length; i < k; i++){
-        // 		if(_scrpTop > $('.fade_left').eq(i).offset().top - 500){
-        // 			$('.fade_left').eq(i).addClass('bounceInLeft');
-        // 		}
-        // 	}
-        // 	for(var i = 0, k = $('.bartender').length; i < k; i++){
-        // 		if(_scrpTop > $('.bartender').eq(i).offset().top - 500){
-        // 			$('.bartender').eq(i).addClass('fadeIn');
-        // 			console.log('RUN');
-        // 		}
-        // 	}
-        // 	for(var i = 0, k = $('.liveBand_img').length; i < k; i++){
-        // 		if(_scrpTop > $('.liveBand_img').eq(i).offset().top - 500){
-        // 			$('.liveBand_img').eq(i).addClass('animation_fade_left');
-        // 		}
-        // 	}
-        // });
       });
     </script>
-
-    <style type="text/css">
-      * {
-        /*outline: 1px solid red;*/
-      }
-    </style>
   </head>
   <body class="Home">
     <!------------navbar------------->
@@ -283,7 +237,6 @@
               style="border: 0"
               allowfullscreen
             ></iframe>
-            <!-- <img src="Map_600x300.jpg" alt="map"> -->
           </div>
         </div>
       </div>
